@@ -1,0 +1,220 @@
+/**
+ *
+ * @authors Ted Shiu (tedshd@gmail.com)
+ * @date    2014-12-28 15:34:37
+ * @version $Id$
+ */
+
+@import "d4";
+
+
+#miiitv_player_container {
+    #cover {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+    }
+    #player_channel_menu_list.menu_open {
+        left: 0;
+    }
+    #player_channel_menu_list {
+        z-index: 2;
+        position: absolute;
+        top: 0;
+        left: -380px;
+        width: 370px;
+        height: 100%;
+        background: $dark;
+        @include box-shadow(rgba(0,0,0, .2) 1px 0 4px);
+        @include transition-property(all);
+        @include transition-duration(.6s);
+        @include transition-timing-function(cubic-bezier(0.290, -0.210, 0.495, 1.155));
+        .channel_list_channel_name {
+            width: 200px;
+            display: inline-block;
+            margin-left: 5px;
+            line-height: 1.2;
+        }
+        ul li {
+            position: relative;
+            display: inline-block;
+            width: 100%;
+            // cursor: pointer;
+            * {
+                vertical-align: middle;
+            }
+            &:before {
+                content: "";
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 100%;
+                height: 100%;
+                @include box-shadow(rgba(0,0,0, .2) 0 1px 4px);
+            }
+            &:hover {
+                background: $dark_gray;
+            }
+        }
+        .channels.active {
+            z-index: 1;
+            background: $font_color;
+            color: $lighter_dark;
+            @include box-shadow(rgba(0,0,0, 1) -3px 0 15px 6px);
+        }
+    }
+    #player_channel_info_container.channel_info_open {}
+    #player_channel_info_container {}
+    #player_video_info_container.video_info_open {
+        bottom: 0;
+    }
+    #player_video_info_container {
+        position: absolute;
+        bottom: -145px;
+        left: 0;
+        min-height: 145px;
+        width: 100%;
+        background: $lighter_dark;
+        @include box-shadow(rgba(0,0,0, .2) 0 -1px 4px);
+        @include transition-property(all);
+        @include transition-duration(.6s);
+        @include transition-timing-function(cubic-bezier(0.000, 0.355, 0.495, 1.155));
+        #channel_title {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            font-size: 1.5em;
+            font-weight: bolder;
+            color: $font_color_sub;
+        }
+        #video_title {
+            width: 100%;
+            padding: 5px;
+            box-sizing: border-box;
+            font-size: 1.2em;
+        }
+        #video_time {
+            text-align: center;
+            margin-bottom: 5px;
+        }
+        #time_line {
+            width: 100%;
+            height: 10px;
+            background: $dark;
+            cursor: pointer;
+            #progress_time {
+                height: 100%;
+                background: $dark_red;
+            }
+        }
+        #video_control {
+            margin-top: 5px;
+            div {
+                display: inline-block;
+                cursor: pointer;
+                svg, span {
+                    vertical-align: middle;
+                }
+                &:hover {
+                    svg {
+                        background: $dark_yellow;
+                    }
+                }
+            }
+        }
+    }
+}
+#miiitv_video_list {
+    z-index: 2;
+    background: $dark;
+    #video_list_control {
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        padding: 5px;
+        background: $light_dark;
+        div {
+            display: inline-block;
+            cursor: pointer;
+            svg, span {
+                vertical-align: middle;
+            }
+        }
+        #video_list_info {
+            float: right;
+            padding: 8px 10px;
+        }
+    }
+    #video_list_ul {
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 100%;
+        @include transition-property(all);
+        @include transition-duration(.3s);
+        @include transition-timing-function(ease-in);
+    }
+    .videos_grid {
+        float: left;
+        position: relative;
+        width: $videoGridW;
+        height: $videoGridH;
+        box-sizing: border-box;
+        .video_title {
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100%;
+            padding: 10px;
+            box-sizing: border-box;
+            background: $lighter_dark_a;
+        }
+    }
+    .focus {
+        &::after {
+            content: "";
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: $videoGridW;
+            height: $videoGridH;
+            box-sizing: border-box;
+            border: solid 5px $dark_yellow;
+        }
+    }
+    .playing {
+        &::before {
+            content: "Playing";
+            // z-index: 1;
+            position: absolute;
+            top: 50%;
+            left: 0;
+            width: $videoGridW;
+            // height: $videoGridH;
+            font-size: $large;
+            margin-top: - (($large + 32px)/2);
+            padding: 16px 0;
+            box-sizing: border-box;
+            background: $lighter_dark_a;
+            text-align: center;
+        }
+    }
+}
+#miiitv_link {
+    z-index: 2;
+    background: $dark;
+    text-align: center;
+    line-height: 1.5em;
+    a {
+        display: block;
+        color: $font_color;
+    }
+    #miiitv_link_container {
+        display: inline-block;
+        vertical-align: middle;
+    }
+}

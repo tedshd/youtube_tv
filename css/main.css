@@ -1,0 +1,49 @@
+/**
+ *
+ * @authors Ted Shiu (tedshd@gmail.com)
+ * @date    2014-12-28 00:23:49
+ * @version $Id$
+ */
+/**
+ *
+ * @authors Ted Shiu (tedshd@gmail.com)
+ * @date    2014-12-28 00:54:39
+ * @version $Id$
+ */
+/**
+ *
+ * @authors Ted Shiu (tedshd@gmail.com)
+ * @date    2014-12-28 00:44:50
+ * @version $Id$
+ */
+/* line 10, ../sass/main.scss */
+body {
+  line-height: 1.3;
+  color: #eee;
+  overflow: hidden;
+}
+
+/* line 16, ../sass/main.scss */
+pre {
+  width: 100%;
+  word-break: break-word;
+}
+
+/* line 21, ../sass/main.scss */
+#miiitv_container {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: #070707;
+}
+
+/* line 29, ../sass/main.scss */
+.full {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}

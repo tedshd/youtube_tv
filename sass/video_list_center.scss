@@ -1,0 +1,25 @@
+/**
+ *
+ * @authors Ted Shiu (tedshd@gmail.com)
+ * @date    2015-02-20 21:16:59
+ * @version $Id$
+ */
+
+@import "d4";
+
+$gridsWidth: 320px; // customize grids width
+
+#miiitv_video_list_container {
+    position: relative;
+    margin: 0 auto;
+}
+
+$columns: 10;
+
+@for $i from 1 through $columns {
+    @media only screen and (min-width : $gridsWidth*$i) {
+        #miiitv_video_list_container {
+            width: $gridsWidth*$i;
+        }
+    }
+}
