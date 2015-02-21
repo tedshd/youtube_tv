@@ -11,6 +11,10 @@ So this service can login with your google account and get your playlist and hav
 
 ![screen_shot_2](img/screen_shot_2.png)
 
+![screen_shot_3](img/screen_shot_3.png)
+
+![screen_shot_4](img/screen_shot_4.png)
+
 ### Support Browser
 
 * IE 11+
