@@ -13,18 +13,11 @@ function loadChannelVideos(count) {
     if (CONSTANT.localStorageData) {
         var data = loadData();
     }
-    console.log(CONSTANT);
-    console.log(channelCount);
-    console.log(CONSTANT.playList[channelCount]);
-    console.log(CONSTANT.playList[0].videos);
     channelVideo = CONSTANT.playList[channelCount].videos;
     channelTitle = CONSTANT.playList[channelCount].data.title;
-    console.log(channelTitle);
-    console.log(channelVideo);
     function initVideoList(channel) {
         node('#miiitv_video_list_container').innerHTML = '';
         node('#video_list_info').innerHTML = '';
-        console.log(channel);
         CONSTANT.videoList = [];
         var videosList = document.createElement('ul');
         for (var i = 0; i < channel.length; i++) {
@@ -32,8 +25,6 @@ function loadChannelVideos(count) {
                 continue;
             }
             CONSTANT.videoList.push(channel[i].snippet);
-            // console.log(i);
-            // console.log(channel[i]);
             var videoTitle = channel[i].snippet.title,
                 videoId = channel[i].snippet.resourceId.videoId,
                 videoCover = channel[i].snippet.thumbnails.medium.url,
@@ -56,7 +47,6 @@ function loadChannelVideos(count) {
             videosList.appendChild(li);
         }
         node('#video_list_info').innerHTML = channelTitle + '('+ channel.length +')';
-        console.log(CONSTANT.videoList);
         initPlayer(channelCount);
         node('#miiitv_video_list_container').appendChild(videosList);
         addClass(node('.videos_grid')[0], 'focus');

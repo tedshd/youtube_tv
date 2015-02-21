@@ -24,7 +24,7 @@ function loadingView(status) {
             addClass(loadView, 'hidden');
             break;
         default:
-            console.log('loadingView status error');
+            console.error('loadingView status error');
     }
     loadView.addEventListener(transitionEnd(), function () {
         if (hasClass(loadView, 'hidden')) {

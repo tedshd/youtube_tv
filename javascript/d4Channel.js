@@ -37,14 +37,11 @@ function d4Channel() {
         xhr.open('GET', 'https://www.googleapis.com/youtube/v3/playlists?part='+part+'&id='+playlistArray[count]+'&maxResults='+maxResults+'&key='+apiKey, true);
         xhr.onload = function(e) {
             if (xhr.status == 200) {
-                // console.log(xhr.responseText);
-                console.log(JSON.parse(xhr.responseText).items[0]);
                 var response = JSON.parse(xhr.responseText),
                     channel = {
                     id: response.items[0].id,
                     data: response.items[0].snippet
                 };
-                console.log(channel);
                 CONSTANT.playList.push(channel);
                 getVideos(count);
             } else {
@@ -58,8 +55,6 @@ function d4Channel() {
         xhr.open('GET', 'https://www.googleapis.com/youtube/v3/playlistItems?part='+part+'&maxResults='+maxResults+'&playlistId='+playlistArray[count]+'&key='+apiKey, true);
         xhr.onload = function(e) {
             if (xhr.status == 200) {
-                // console.log(xhr.responseText);
-                // console.log(JSON.parse(xhr.responseText));
                 var response = JSON.parse(xhr.responseText);
                 CONSTANT.playList[count].videos = response.items;
                 count++;

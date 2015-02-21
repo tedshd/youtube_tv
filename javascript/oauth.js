@@ -14,14 +14,12 @@ function oauth() {
         ];
 
     googleApiClientReady = function() {
-        console.log('googleApiClientReady');
         gapi.auth.init(function() {
             window.setTimeout(checkAuth, 1);
         });
     };
 
     function checkAuth() {
-        console.log('checkAuth');
         gapi.auth.authorize({
             client_id: OAUTH2_CLIENT_ID,
             scope: OAUTH2_SCOPES,
@@ -30,10 +28,7 @@ function oauth() {
     }
 
     function handleAuthResult(authResult) {
-        console.log('handleAuthResult');
-        console.log(authResult);
         if (authResult && !authResult.error) {
-            console.log('authResult', authResult);
             if (authResult.status.method !== 'AUTO') {
                 location.reload();
             }
@@ -44,10 +39,6 @@ function oauth() {
             });
         } else {
             d4Channel();
-            // initChannelList();
-            // removeClass(node('#popup_login'), 'hide');
-            // alert('unlogin');
-            console.log('login google');
             addClass(node('#logout_link'), 'hide');
             node('#login_link').addEventListener('click', function () {
                 gapi.auth.authorize({

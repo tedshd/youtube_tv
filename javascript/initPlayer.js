@@ -9,7 +9,6 @@
 
 function initPlayer(channelCount) {
 
-    console.log(CONSTANT.videoList);
     if (!CONSTANT.player) {
         youTubePlayer = new window.youTubePlayer();
         CONSTANT.player = true;

@@ -11,7 +11,6 @@ function initChannelList() {
     var channelList = CONSTANT.playList,
         ul = document.createElement('ul');
     for (var i = 0; i < channelList.length; i++) {
-        console.log(channelList[i]);
         var li = document.createElement('li');
         li.setAttribute('class', 'channels');
         li.setAttribute('id', 'ch_' + i + '');
@@ -25,20 +24,8 @@ function initChannelList() {
     }
     node('#player_channel_menu_list').appendChild(ul);
     addClass(document.querySelectorAll('.channels')[0], 'active');
-    console.log(CONSTANT);
     tmpArr = node('.channels');
     loadChannelVideos();
 
     var channels = document.querySelectorAll('#player_channel_menu_list li');
-    // for (var i = 0; i < channels.length; i++) {
-    //     channels[i].addEventListener('click', function (e) {
-    //         // console.log(e);
-    //         // console.log(e.target.id);
-    //         var channelCount = parseInt(e.target.id.replace('ch_', ''), 10);
-    //         removeClass(document.querySelectorAll('.channels')[youTubePlayer.PLAYERCONFIG.playingChannelCount], 'active');
-    //         console.log(channelCount);
-    //         addClass(e.target, 'active');
-    //         loadChannelVideos(channelCount);
-    //     });
-    // }
 }

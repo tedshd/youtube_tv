@@ -23,7 +23,6 @@ function gridDPad() {
         viewXCount = Math.floor(viewW/gridW);
         viewYCount = Math.floor(viewH/gridH);
         viewCount = viewXCount*viewYCount;
-        console.log('initView', viewXCount);
     }
     function resetCount(count) {
         focusCount = count || 0;
@@ -40,7 +39,6 @@ function gridDPad() {
         if (focusCount >= gridsSum - 1) {
             focusCount = gridsSum - 1;
         }
-        console.log(focusCount);
         domList[focusCount].classList.add('focus');
     }
     function moveLeft() {
@@ -65,19 +63,15 @@ function gridDPad() {
         switch (type) {
             case 'up':
                 moveUp();
-                console.log(focusCount);
                 break;
             case 'down':
                 moveDown();
-                console.log(focusCount);
                 break;
             case 'left':
                 moveLeft();
-                console.log(focusCount);
                 break;
             case 'right':
                 moveRight();
-                console.log(focusCount);
                 break;
             default:
                 console.error('gridDPad move type error');

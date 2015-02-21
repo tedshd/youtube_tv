@@ -62,7 +62,6 @@
         }
 
         function initYouTubePlayer(videoCount) {
-            console.log('initYouTubePlayer');
             function onYouTubeIframeAPIReady() {
                 player = new YT.Player('player', {
                     width: PLAYERCONFIG.width,
@@ -137,7 +136,6 @@
         }
 
         function loadChannel(chData, channelCount) {
-            console.log(chData);
             PLAYERCONFIG.videosList = chData;
             PLAYERCONFIG.playingChannelCount = channelCount || 0;
             PLAYERCONFIG.playingVideoCount = 0;
@@ -241,7 +239,6 @@
         function timeJump(num) {
             var time = (num/100)*videoTotalTime();
             time = Math.round(time);
-            console.log(time);
             player.seekTo(time, true);
         }
 
@@ -252,7 +249,6 @@
             document.querySelector('#video_title').innerHTML = videoTitle;
         }
         function updateCurrentTime() {
-            console.log('updateCurrentTime');
             clearInterval(updateCurrentTimeInterval);
             var currentTime = parseInt(videoCurrentTime(), 10);
             if (toHHMMSS(currentTime) === 'NaN:NaN:NaN') {

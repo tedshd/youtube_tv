@@ -249,14 +249,12 @@ function keyboardControl(e) {
     if (!keyboardControlAllow || !CONSTANT.player) {
         return;
     }
-    console.log(e);
     switch (e.keyCode) {
         case 13:
             // enter
             if (videoListOpenStatus) {
                 if (CONSTANT.player) {
                     var count = parseInt(node('#miiitv_video_list .focus')[0].getAttribute('data-video-list-count'), 10);
-                    console.log(count);
                     removeClass(node('.videos_grid')[youTubePlayer.PLAYERCONFIG.playingVideoCount], 'focus');
                     removeClass(node('.videos_grid')[youTubePlayer.PLAYERCONFIG.playingVideoCount], 'playing');
                     youTubePlayer.loadVideo(count, 'updateCurrentCount');
@@ -381,7 +379,6 @@ node('#time_line').addEventListener('click', function (e) {
     var time = (e.clientX/window.document.documentElement.clientWidth)*10000;
     time = Math.round(time);
     time = time/100;
-    console.log(time);
     youTubePlayer.timeJump(time);
 });
 node('#prev_channel').addEventListener('click', function () {
