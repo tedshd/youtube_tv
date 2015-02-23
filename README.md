@@ -32,4 +32,5 @@ So this service can login with your google account and get your playlist and hav
 
 * save last watch status
 * full screen
+* lazy load
 * Android App

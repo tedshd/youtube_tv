@@ -8,6 +8,16 @@
 
 
 function oauth() {
+    if (browser() === 'IE10' ||
+        browser() === 'IE9' ||
+        browser() === 'IE8' ||
+        browser() === 'IE7'
+    ) {
+        setTimeout(function () {
+            removeClass(node('#browser'), 'hide');
+        }, 1000);
+        return;
+    }
     var OAUTH2_CLIENT_ID = '209837194630-i4figase4bf4nbtjh9fuh5hop6nbu50l.apps.googleusercontent.com',
         OAUTH2_SCOPES = [
             'https://www.googleapis.com/auth/youtube'

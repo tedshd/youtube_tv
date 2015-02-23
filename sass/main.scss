@@ -35,3 +35,9 @@ pre {
 }
 
 #miiitv_setting_container {}
+
+#browser {
+    z-index: 1000;
+    background: $dark;
+    text-align: center;
+}
