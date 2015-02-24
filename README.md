@@ -38,3 +38,4 @@ So this service can login with your google account and get your playlist and hav
 * full screen
 * lazy load
 * Android App
+* UX
