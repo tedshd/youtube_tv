@@ -1,6 +1,10 @@
 # youtube_tv
 It's a youtube video player can play your playlist build on youtube
 
+## URL
+
+[Youtube TV](http://tedshd.lionfree.net/youtube_tv)
+
 ## Intro
 
 Youtube can build playlist and add video to your playlist.
