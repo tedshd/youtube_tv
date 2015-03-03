@@ -9,3 +9,7 @@
 ### 0.1.1
 
 * Browser not support view
+
+### 0.1.2
+
+* Add GA default
