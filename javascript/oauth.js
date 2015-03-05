@@ -45,12 +45,14 @@ function oauth() {
             loadAPIClientInterfaces();
             addClass(node('#login_link'), 'hide');
             node('#logout_link').addEventListener('click', function () {
+                ga('send', 'event', 'link', 'logout google');
                 window.location = 'https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=http://tedshd.lionfree.net/youtube_tv';
             });
         } else {
             d4Channel();
             addClass(node('#logout_link'), 'hide');
             node('#login_link').addEventListener('click', function () {
+                ga('send', 'event', 'link', 'oauth google');
                 window.location = 'https://accounts.google.com/o/oauth2/auth?client_id=' +
                 OAUTH2_CLIENT_ID +
                 '&redirect_uri=http://tedshd.lionfree.net/oauth2callback' +

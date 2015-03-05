@@ -17,3 +17,4 @@
 ### 0.1.3
 
 * Fixed google oauth
+* Add GA event

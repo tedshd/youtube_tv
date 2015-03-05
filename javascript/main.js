@@ -21,6 +21,7 @@ function menuOpen(action) {
         case 'open':
             addClass(node('#player_channel_menu_list'), 'menu_open');
             menuOpenStatus = true;
+            ga('send', 'event', 'operate', 'open menu');
             break;
         case 'close':
             removeClass(node('#player_channel_menu_list'), 'menu_open');
@@ -38,6 +39,7 @@ function infoOpen(action) {
         case 'open':
             addClass(node('#player_video_info_container'), 'video_info_open');
             infoOpenStatus = true;
+            ga('send', 'event', 'operate', 'open video info');
             break;
         case 'close':
             removeClass(node('#player_video_info_container'), 'video_info_open');
@@ -55,6 +57,7 @@ function videoList(action) {
             }
             removeClass(node('#miiitv_video_list'), 'hide');
             videoListOpenStatus = true;
+            ga('send', 'event', 'operate', 'open video list');
             break;
         case 'close':
             addClass(node('#miiitv_video_list'), 'hide');
