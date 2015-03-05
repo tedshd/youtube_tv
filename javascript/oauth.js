@@ -18,7 +18,7 @@ function oauth() {
         }, 1000);
         return;
     }
-    var OAUTH2_CLIENT_ID = '209837194630-i4figase4bf4nbtjh9fuh5hop6nbu50l.apps.googleusercontent.com',
+    var OAUTH2_CLIENT_ID = '433333476764-0usm520i8e79f58gjph6l44jtru8eq9n.apps.googleusercontent.com',
         OAUTH2_SCOPES = [
             'https://www.googleapis.com/auth/youtube'
         ];
@@ -45,17 +45,16 @@ function oauth() {
             loadAPIClientInterfaces();
             addClass(node('#login_link'), 'hide');
             node('#logout_link').addEventListener('click', function () {
-                window.location = "https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=http://localhost/develop/miiitv_1.0_redesign/";
+                window.location = 'https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=http://tedshd.lionfree.net/youtube_tv';
             });
         } else {
             d4Channel();
             addClass(node('#logout_link'), 'hide');
             node('#login_link').addEventListener('click', function () {
-                gapi.auth.authorize({
-                    client_id: OAUTH2_CLIENT_ID,
-                    scope: OAUTH2_SCOPES,
-                    immediate: false
-                }, handleAuthResult);
+                window.location = 'https://accounts.google.com/o/oauth2/auth?client_id=' +
+                OAUTH2_CLIENT_ID +
+                '&redirect_uri=http://tedshd.lionfree.net/oauth2callback' +
+                '&scope=https://www.googleapis.com/auth/youtube&response_type=token';
             });
         }
     }

@@ -13,3 +13,7 @@
 ### 0.1.2
 
 * Add GA default
+
+### 0.1.3
+
+* Fixed google oauth
