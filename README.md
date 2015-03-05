@@ -39,3 +39,4 @@ So this service can login with your google account and get your playlist and hav
 * lazy load
 * Android App
 * UX
+* mobile web support
