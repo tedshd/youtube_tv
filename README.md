@@ -38,5 +38,9 @@ So this service can login with your google account and get your playlist and hav
 * full screen
 * lazy load
 * Android App
-* UX
+* iOS App(React native?)
 * mobile web support
+
+## Release note
+
+[release note](release_note.md)
