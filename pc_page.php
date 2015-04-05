@@ -5,8 +5,6 @@
  * @date    2015-04-05 19:23:46
  */
 
-echo 'pc_page';
-
 ?>
 
 <!DOCTYPE html>
