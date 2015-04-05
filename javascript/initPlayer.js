@@ -19,6 +19,6 @@ function initPlayer(channelCount) {
     initSize();
     youTubePlayer.loadChannel(CONSTANT.videoList, channelCount);
     youTubePlayer.PLAYERCONFIG.init = true;
-    loadingView('hide');
     keyboardControlAllow = true;
+    loadingView('hide');
 }
