@@ -30,6 +30,7 @@ function d4Channel() {
     // https://www.googleapis.com/youtube/v3/playlistItems?part=snippet&maxResults=50&playlistId=PL8CKkc4HozgooY_BBNRVFdUgru33K9AWI&key=AIzaSyDQTsG6yBEpOU-72s_JbG1u0j0o54U48cM
     getPlayList(0);
     function getPlayList(count) {
+        node('#loading_hint').innerHTML = '取得播放清單';
         if (count >= playlistArray.length) {
             return;
         }

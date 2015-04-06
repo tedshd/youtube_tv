@@ -8,6 +8,7 @@
 
 
 function initChannelList() {
+    node('#loading_hint').innerHTML = '初始化播放清單';
     var channelList = CONSTANT.playList,
         ul = document.createElement('ul');
     for (var i = 0; i < channelList.length; i++) {

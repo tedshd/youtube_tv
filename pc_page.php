@@ -194,7 +194,7 @@
                 <span class="item-5"></span>
                 <span class="item-6"></span>
                 <span class="item-7"></span>
-                <!-- <div>初始化 App</div> -->
+                <div id="loading_hint">初始化</div>
             </div>
         </div>
         <div class="full hide vertical-centering" id="browser">

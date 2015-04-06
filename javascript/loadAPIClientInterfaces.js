@@ -41,6 +41,7 @@ function loadAPIClientInterfaces() {
 
     // Retrieve the list of videos in the specified playlist.
     function requestVideoPlaylist(playlist, pageToken) {
+        node('#loading_hint').innerHTML = '取得播放清單';
         var requestOptions = {
                 playlistId: playlist.id,
                 part: 'snippet',

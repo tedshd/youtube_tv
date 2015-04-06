@@ -8,7 +8,7 @@
 
 
 function initPlayer(channelCount) {
-
+    node('#loading_hint').innerHTML = '初始化播放器';
     if (!CONSTANT.player) {
         youTubePlayer = new window.youTubePlayer();
         CONSTANT.player = true;
