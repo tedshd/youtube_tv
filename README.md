@@ -40,6 +40,7 @@ So this service can login with your google account and get your playlist and hav
 * Android App
 * iOS App(React native?)
 * mobile web support
+* show added playerlist
 
 ## Release note
 
