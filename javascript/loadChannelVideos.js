@@ -25,6 +25,7 @@ function loadChannelVideos(count) {
                 continue;
             }
             CONSTANT.videoList.push(channel[i].snippet);
+console.log(channel[i]);
             var videoTitle = channel[i].snippet.title,
                 videoId = channel[i].snippet.resourceId.videoId,
                 videoCover = channel[i].snippet.thumbnails.medium.url,

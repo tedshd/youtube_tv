@@ -12,7 +12,6 @@ function d4Channel() {
         part = 'snippet',
         maxResults = 50,
         playlistArray = [
-            'PLPphwZOAe2uQSH_OfY2yV-yX3OLL5mNiF',
             'PLjw-j0hh81Ic5ISTlNUtsra2g8QHPrb73',
             'PLnuf8iyXggLF1i0uDcAcfT5nVNp2zMetB',
             'PLwJU_HbYL0K-707IYgm7kE22xU3bg9d2R',
