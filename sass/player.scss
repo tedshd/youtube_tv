@@ -26,7 +26,7 @@
         left: -380px;
         width: 370px;
         height: 100%;
-        background: $dark;
+        background: $channel_menu;
         @include box-shadow(rgba(0,0,0, .2) 1px 0 4px);
         @include transition-property(all);
         @include transition-duration(.6s);
@@ -60,7 +60,7 @@
         }
         .channels.active {
             z-index: 1;
-            background: $font_color;
+            background: $channel_active;
             color: $lighter_dark;
             @include box-shadow(rgba(0,0,0, 1) -3px 0 15px 6px);
         }
@@ -76,7 +76,7 @@
         left: 0;
         min-height: 145px;
         width: 100%;
-        background: $lighter_dark_a;
+        background: $video_info;
         @include box-shadow(rgba(0,0,0, .2) 0 -1px 4px);
         @include transition-property(all);
         @include transition-duration(.6s);
