@@ -18,7 +18,7 @@ function oauth() {
         }, 1000);
         return;
     }
-    var OAUTH2_CLIENT_ID = '433333476764-0usm520i8e79f58gjph6l44jtru8eq9n.apps.googleusercontent.com',
+    var OAUTH2_CLIENT_ID = CONSTANT.clientId,
         OAUTH2_SCOPES = [
             'https://www.googleapis.com/auth/youtube'
         ];

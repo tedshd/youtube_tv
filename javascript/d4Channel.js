@@ -8,7 +8,7 @@
 
 
 function d4Channel() {
-    var apiKey = 'AIzaSyDQTsG6yBEpOU-72s_JbG1u0j0o54U48cM',
+    var apiKey = CONSTANT.apiKey,
         part = 'snippet',
         maxResults = 50,
         playlistArray = [
