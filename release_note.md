@@ -18,3 +18,7 @@
 
 * Fixed google oauth
 * Add GA event
+
+### 0.14
+
+* Move service to Google Cloud platform

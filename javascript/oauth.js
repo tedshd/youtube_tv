@@ -46,7 +46,7 @@ function oauth() {
             addClass(node('#login_link'), 'hide');
             node('#logout_link').addEventListener('click', function () {
                 ga('send', 'event', 'link', 'logout google');
-                window.location = 'https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=http://tedshd.lionfree.net/youtube_tv';
+                window.location = 'https://www.google.com/accounts/Logout?continue=https://appengine.google.com/_ah/logout?continue=http://tedshd.io/youtube_tv';
             });
         } else {
             d4Channel();
@@ -55,7 +55,7 @@ function oauth() {
                 ga('send', 'event', 'link', 'oauth google');
                 window.location = 'https://accounts.google.com/o/oauth2/auth?client_id=' +
                 OAUTH2_CLIENT_ID +
-                '&redirect_uri=http://tedshd.lionfree.net/oauth2callback' +
+                '&redirect_uri=' + CONSTANT.callBack +'' +
                 '&scope=https://www.googleapis.com/auth/youtube&response_type=token';
             });
         }

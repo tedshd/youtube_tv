@@ -9,7 +9,8 @@
 
 var CONSTANT = {
     apiKey: 'AIzaSyDbLMkzM6NWdHw2mGbarKblI9iHDzufvEU',
-    clientId: '94391273708-1170981f357m9jn2akr5vgjscrirfl19.apps.googleusercontent.com',
+    clientId: '94391273708-nflbpcj18n0g988pgrrdah1iu0tjf4rk.apps.googleusercontent.com',
+    callBack: 'http://tedshd.io/youtube_tv/oauth2callback.html',
     playList: [],
     videoList: [],
     localStorageData: false
