@@ -1,47 +1,18 @@
 # youtube_tv
-It's a youtube video player can play your playlist build on youtube
 
-## URL
+> youtube tv build by vue
 
-[Youtube TV](http://tedshd.io/youtube_tv)
+## Build Setup
 
-## Intro
+``` bash
+# install dependencies
+npm install
 
-Youtube can build playlist and add video to your playlist.
-But when you want to watch it, you can feel bad user experience.
-So this service can login with your google account and get your playlist and have friendly control experience.
+# serve with hot reload at localhost:8080
+npm run dev
 
-![screen_shot_1](img/screen_shot_1.png)
+# build for production with minification
+npm run build
+```
 
-![screen_shot_2](img/screen_shot_2.png)
-
-![screen_shot_3](img/screen_shot_3.png)
-
-![screen_shot_4](img/screen_shot_4.png)
-
-### Support Browser
-
-* IE 11+
-* Chrome
-* Safari
-* Firefox
-
-## Feature
-
-* default playlist
-* Login google account get playlist
-* keyboard control
-
-## ToDo list
-
-* save last watch status
-* full screen
-* lazy load
-* Android App
-* iOS App(React native?)
-* mobile web support
-* show added playerlist
-
-## Release note
-
-[release note](release_note.md)
+For detailed explanation on how things work, checkout the [guide](http://vuejs-templates.github.io/webpack/) and [docs for vue-loader](http://vuejs.github.io/vue-loader).
