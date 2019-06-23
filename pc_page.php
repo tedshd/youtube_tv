@@ -13,15 +13,14 @@
 <meta charset="utf-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0">
 <title>youtube - TV</title>
-<link rel="stylesheet" href="css/style.css">
 <script>
-  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
-  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
-  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
-  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  // (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  // (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  // m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  // })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
 
-  ga('create', 'UA-49247550-4', 'auto');
-  ga('send', 'pageview');
+  // ga('create', 'UA-49247550-4', 'auto');
+  // ga('send', 'pageview');
 
 </script>
 </head>
@@ -177,46 +176,24 @@
                 <span id="video_list_info"></span>
             </div>
         </div>
-        <div class="full hide vertical-centering" id="miiitv_link">
-            <div id="miiitv_link_container">
-                <a href="javascript:void(0)" id="login_link">link your youtube</a>
-                登入 google / youtube 帳號以便觀看自己在 youtube 建立的播放清單
-                <a href="javascript:void(0)" id="logout_link">Cancel Link your playlist</a>
-            </div>
-        </div>
+
         <div class="full hide" id="miiitv_setting_container"></div>
-        <div class="full loading" id="loading_view">
-            <div id="loader" class="">
-                <span class="item-1"></span>
-                <span class="item-2"></span>
-                <span class="item-3"></span>
-                <span class="item-4"></span>
-                <span class="item-5"></span>
-                <span class="item-6"></span>
-                <span class="item-7"></span>
-                <div id="loading_hint">初始化</div>
-            </div>
-        </div>
-        <div class="full hide vertical-centering" id="browser">
-            Browser or browser version not support
-        </div>
+
     </div>
 </body>
-<script src="http://www.youtube.com/iframe_api"></script>
+<script src="https://www.youtube.com/iframe_api""></script>
 <script src="javascript/lib.js"></script>
-<script src="javascript/browser.js"></script>
 <script src="javascript/var.js"></script>
 <script src="javascript/util.js"></script>
 <script src="javascript/d4Channel.js"></script>
-<script src="javascript/oauth.js"></script>
-<script src="javascript/loadAPIClientInterfaces.js"></script>
 <script src="javascript/initChannelList.js"></script>
 <script src="javascript/loadChannelVideos.js"></script>
 <script src="javascript/player.js"></script>
 <script src="javascript/initPlayer.js"></script>
 <script src="javascript/gridDPad.js"></script>
+
 <script src="javascript/main.js"></script>
-<script src="https://apis.google.com/js/client.js?onload=googleApiClientReady"></script>
+
 <script>
     console.log('version - 0.1.3');
     console.log('miiiTV - R.I.P');

@@ -8,6 +8,7 @@
 
 
 function d4Channel() {
+    console.log('d4channel');
     var apiKey = CONSTANT.apiKey,
         part = 'snippet',
         maxResults = 50,

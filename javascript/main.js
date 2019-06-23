@@ -7,9 +7,10 @@
  */
 
 
-oauth();
+// oauth();
 // loadAPIClientInterfaces();
-// initChannelList();
+d4Channel();
+initChannelList();
 
 
 var menuOpenStatus = false;
